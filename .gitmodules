@@ -1,0 +1,3 @@
+[submodule "WSAA-Courseware"]
+	path = WSAA-Courseware
+	url = https://github.com/andrewbeattycourseware/WSAA-Courseware

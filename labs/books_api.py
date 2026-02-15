@@ -12,7 +12,7 @@ def readbook(id):
     getURL = URL +"/" + str(id)
     response = requests.get(getURL)
     return response.json()
-
+ 
 # Create a new book
 def createbook(book):
     response = requests.post(URL, json=book)
@@ -36,4 +36,7 @@ if __name__ == "__main__":
     print(readbooks())
 
     print("\nBook with ID 1: ")
-    print(readbook(1))
+    books = readbooks()
+    first_id = books[0]["id"]
+    print(readbook(first_id))
+    

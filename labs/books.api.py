@@ -10,7 +10,7 @@ def readbooks():
 # Get one book by ID
 def readbook(id):
     getURL = URL +"/" + str(id)
-    response = requests.get(geturl)
+    response = requests.get(getURL)
     return response.json()
 
 # Create a new book

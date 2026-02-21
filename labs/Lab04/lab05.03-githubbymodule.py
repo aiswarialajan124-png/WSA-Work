@@ -19,3 +19,12 @@ print(fileInfo.download_url)
 response = requests.get(fileInfo.download_url)
 contentOfFile = response.text
 print(contentOfFile)
+
+newContents = contentOfFile + "more stuff\n"
+repo.update_file(
+    fileInfo.path,
+    "update by program",
+    newContents,
+    fileInfo.sha
+)
+print("File update successfully")

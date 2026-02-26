@@ -1,0 +1,14 @@
+Entity: Book
+
+Fields:
+- id (int)
+- title (string)
+- author (string)
+- price (number)
+
+Endpoints:
+GET    /books          → get all books
+GET    /books/<id>     → get one book by id
+POST   /books          → create a book
+PUT    /books/<id>     → update a book
+DELETE /books/<id>     → delete a book
